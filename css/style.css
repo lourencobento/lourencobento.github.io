@@ -217,7 +217,11 @@ img,video {
 
 body {
     background-color: hsl(var(--background));
-    color: hsl(var(--foreground))
+    color: hsl(var(--foreground));
+    
+    margin: 0;
+    padding: 0;
+
 }
 
 .sr-only {
