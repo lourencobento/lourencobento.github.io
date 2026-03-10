@@ -1,11 +1,274 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
-  <title>Meu site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Lourenço Bento - Consultor de Imagem</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #F5EDE3;
+      color: #2D2D2D;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 80px;
+      background: white;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      z-index: 10;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #6B6B6B;
+      margin-left: 25px;
+      font-weight: 500;
+    }
+
+    .btn {
+      background: #B5885A;
+      color: white;
+      padding: 10px 22px;
+      border-radius: 30px;
+      text-decoration: none;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 10%;
+    }
+
+    .hero-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 56px;
+      font-weight: 300;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .hero span {
+      color: #B5885A;
+      font-style: italic;
+      font-weight: 600;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #6B6B6B;
+      margin-bottom: 30px;
+    }
+
+    .stats {
+      display: flex;
+      gap: 50px;
+      margin-top: 40px;
+    }
+
+    .stats h3 {
+      font-size: 28px;
+    }
+
+    .services {
+      background: white;
+      padding: 120px 10%;
+    }
+
+    .services-title {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .services-title h2 {
+      font-size: 42px;
+      font-weight: 300;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .card {
+      background: #FDFAF7;
+      padding: 40px;
+      border-radius: 16px;
+      border: 1px solid #eee;
+      transition: .3s;
+    }
+
+    .card:hover {
+      border-color: #B5885A;
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      padding: 60px;
+      text-align: center;
+      background: #2D2D2D;
+      color: white;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Terceiro Teste</h1>
-  <p>Update em index.html</p>
+
+  <nav>
+
+    <h2>Lourenço Bento</h2>
+
+    <div>
+      <a href="#">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+      <a class="btn" href="https://wa.me/5561984461020">Agendar</a>
+    </div>
+
+  </nav>
+
+
+  <section class="hero">
+
+    <div class="hero-container">
+
+      <div>
+
+        <h1>
+          Descubra o poder da sua
+          <span>imagem autêntica</span>
+        </h1>
+
+        <p>
+          Transforme a maneira como você se apresenta ao mundo.
+          Sua imagem comunica antes mesmo das suas palavras.
+        </p>
+
+        <a class="btn">Agende sua Consultoria</a>
+
+        <div class="stats">
+
+          <div>
+            <h3>500+</h3>
+            <p>Clientes</p>
+          </div>
+
+          <div>
+            <h3>10+</h3>
+            <p>Anos</p>
+          </div>
+
+          <div>
+            <h3>98%</h3>
+            <p>Satisfação</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div>
+
+        <img src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc" style="width:100%;border-radius:20px;">
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="services" id="servicos">
+
+    <div class="services-title">
+
+      <h2>Como posso te ajudar</h2>
+
+      <p>
+        Cada serviço é pensado para revelar o melhor de você
+      </p>
+
+    </div>
+
+    <div class="services-grid">
+
+      <div class="card">
+
+        <h3>Consultoria de Imagem Pessoal</h3>
+
+        <p>
+          Análise completa do seu estilo,
+          biotipo e personalidade para criar
+          uma imagem autêntica.
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>Coloração Pessoal</h3>
+
+        <p>
+          Descubra quais cores valorizam
+          seu tom de pele e estilo.
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>Personal Shopper</h3>
+
+        <p>
+          Acompanhamento profissional
+          para compras estratégicas.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <footer class="footer">
+
+    <p>
+      © 2026 Lourenço Bento - Consultoria de Imagem
+    </p>
+
+  </footer>
+
 </body>
+
 </html>
