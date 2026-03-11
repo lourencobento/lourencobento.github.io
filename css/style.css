@@ -120,14 +120,23 @@
 .animar-scroll {
   opacity: 0;
   transform: translateX(30px);
-  transition: all 0.5s ease-out; /* Suaviza a volta ao topo */
+  transition: all 0.5s ease-out;  
+  animation-fill-mode: backwards;
+}
+ 
+.animar-scroll.active { 
+  animation: active-end 2s forwards, active-transition 1.5s forwards; 
 }
 
-/* Estado ativo (quando o JS adiciona a classe .active) */
-.animar-scroll.active {
-  animation: base44-fade-in 0.8s forwards, base44-scale-in 0.5s forwards;
-  /* O 'forwards' mantém o estado final da animação */
-}
+@keyframes active-end {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+@keyframes active-transition {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+} 
 
 html,:host {
     line-height: 1.5;

@@ -20,23 +20,22 @@ window.addEventListener('scroll', () => {
 });
 
 // ANIMAÇÕES
-const observerOptions = {
-  root: null, // usa a tela inteira como referência
-  threshold: 0.2 // ativa quando 20% da div estiver visível
+const Opcoes = {
+  root: null, // tela 
+  threshold: 0.2 // 20% da div
 };
 
-const observer = new IntersectionObserver((entries) => {
+const visao = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('active');
-    } else {
-      // Opcional: remove a classe ao subir a página para re-animar depois
-      entry.target.classList.remove('active');
-    }
+    } // else { 
+    //   entry.target.classList.remove('active');
+    // }
   });
-}, observerOptions);
+}, Opcoes);
 
-// Seleciona todas as divs com a classe e começa a observar
+// divs 
 document.querySelectorAll('.animar-scroll').forEach(div => {
-  observer.observe(div);
+  visao.observe(div);
 });
