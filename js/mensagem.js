@@ -1,5 +1,5 @@
 async function carregarConfig() {
-    const resp = await fetch("/config.json", { cache: "no-cache" });
+    const resp = await fetch("./config.json", { cache: "no-cache" });
     if (!resp.ok) throw new Error("Não foi possível carregar config.json");
     return resp.json();
     } 
@@ -14,12 +14,12 @@ async function enviarWpp(event) {
     const mensagem = document.getElementById("mensagem").value.trim();
 
     const servicosMap = {
-    consultoria_pessoal: "Consultoria de Imagem Pessoal",
-    coloracao_pessoal: "Coloração Pessoal",
-    personal_shopper: "Personal Shopper",
-    closet_detox: "Closet Detox",
-    consultoria_corporativa: "Consultoria Corporativa",
-    outro: "Outro"
+        consultoria_pessoal: "Consultoria de Imagem Pessoal",
+        coloracao_pessoal: "Coloração Pessoal",
+        personal_shopper: "Personal Shopper",
+        closet_detox: "Closet Detox",
+        consultoria_corporativa: "Consultoria Corporativa",
+        outro: "Outro"
     };
 
     const servicoTexto = servicosMap[servico] || "Não informado";
