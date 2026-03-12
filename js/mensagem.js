@@ -1,12 +1,15 @@
-async function carregarConfig() {
-    const resp = await fetch("./config.json", { cache: "no-cache" });
-    if (!resp.ok) throw new Error("Não foi possível carregar config.json");
-    return resp.json();
-    } 
-
 async function enviarWpp(event) {
     event.preventDefault(); 
 
+    const config = await carregarConfig();
+    const numeroWpp = config.contato.whatsapp;
+
+    if (!numeroWpp) {
+        alert("Ocorreu um erro durante o carregamento das informações de contato. Atualize a página e tente novamente.");
+        return;
+    }
+
+    // Informações da mensagem
     const nome = document.getElementById("nome").value.trim();
     const email = document.getElementById("email").value.trim();
     const telefone = document.getElementById("telefone").value.trim();
@@ -39,11 +42,8 @@ async function enviarWpp(event) {
     texto += `💬 *Mensagem:*\n${mensagem}\n`;
     }
 
-    const config = await carregarConfig();
-    const numeroWpp = config.contato.whatsapp;
-
-    // const numeroWpp = "5561995690394";
+    // Envio
     const url = `https://wa.me/${numeroWpp}?text=${encodeURIComponent(texto)}`;
 
   window.open(url, "_blank");
-} 
+}   
