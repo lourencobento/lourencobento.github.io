@@ -2,7 +2,7 @@
 
 [x] Ajustes iniciais no projeto  
 [x] Validações de formulário  
-[ ] Envio de formulário  
+[x] Envio de formulário  
 [ ] Animação de confirmação de envio do formulário  
 [ ] Correção problema btn hb-menu  
 [ ] Substituição dos ícones  

@@ -41,7 +41,7 @@ telefone.addEventListener('input', (e) => {
 // CAMPO MENSAGEM
 mensagem.addEventListener('input', (e) => {
     mensagem.classList.remove('validated-invalid');
-    nome.setCustomValidity("");
+    mensagem.setCustomValidity("");
 })
 
 // Validações
@@ -90,14 +90,16 @@ formulario.addEventListener('submit', (e) => {
     // MENSAGEM
     if (texto.length < 10) {
         e.preventDefault();
+        
         mensagem.classList.add("validated-invalid");
         mensagem.setCustomValidity("Mensagem muito curta");
-        mensagem.focus();
+        mensagem.focus(); 
     } else if (texto.length > 300) {
         e.preventDefault();
+
         mensagem.classList.add("validated-invalid");
         mensagem.setCustomValidity("Mensagem muito longa");
-        mensagem.focus();
+        mensagem.focus(); 
     } else {
         mensagem.classList.remove('validated-invalid');
         mensagem.setCustomValidity("");

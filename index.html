@@ -894,7 +894,7 @@
                 </div>
                 <!-- FORMULÁRIO DE CONTATO -->
                 <div class="animar-scroll lg:col-span-3" style="opacity: 0; transform: translateX(20px)">
-                  <form id="meuFormulario" class="bg-white rounded-3xl p-8 md:p-10 shadow-lg space-y-5">
+                  <form id="meuFormulario" class="bg-white rounded-3xl p-8 md:p-10 shadow-lg space-y-5" onsubmit="enviarWpp(event)">
                     <div class="grid sm:grid-cols-2 gap-5">
                       <div>
                         <label class="text-sm font-medium text-[#2D2D2D] mb-2 block">
@@ -1095,6 +1095,7 @@
   <div id="extension-begak"></div>
   <script src="js/animacoes.js"></script>
   <script src="js/validacoes.js"></script>
+  <script src="js/mensagem.js"></script>
 </body>
 
 </html>
