@@ -123,14 +123,14 @@ async function enviarWpp(event) {
     }
 
     const url = `https://wa.me/${numeroWpp}?text=${encodeURIComponent(texto)}`;
-
-    setTimeout(() => {
-      window.open(url, "_blank");
-    }, 3000);
-
+ 
     setSucesso();
     resetBotao();
 
+    setTimeout(() => {
+      window.open(url, "_blank");
+    }, 3000); 
+    
   } catch (erro) {
     console.error(erro);
     setErro();
