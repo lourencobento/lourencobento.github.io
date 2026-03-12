@@ -83,7 +83,7 @@ async function enviarWpp(event) {
     //   botao.className = botao.className.replace(/bg-\w+-\d+/g, "");
       botao.classList.remove("setSuccess", "setSuccess:hover", "setFail", "setFail:hover");
       botao.classList.add("text-white", "bg-[#B5885A]", "hover:bg-[#A07548]");
-    }, 3000);
+    }, 5000);
   };
 
   try {
@@ -124,7 +124,9 @@ async function enviarWpp(event) {
 
     const url = `https://wa.me/${numeroWpp}?text=${encodeURIComponent(texto)}`;
 
-    window.open(url, "_blank");
+    setTimeout(() => {
+      window.open(url, "_blank");
+    }, 3000);
 
     setSucesso();
     resetBotao();
