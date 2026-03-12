@@ -1,7 +1,7 @@
 # lourenco.github.io
 
 [x] Ajustes iniciais no projeto  
-[ ] Validações de formulário  
+[x] Validações de formulário  
 [ ] Envio de formulário  
 [ ] Animação de confirmação de envio do formulário  
 [ ] Correção problema btn hb-menu  
