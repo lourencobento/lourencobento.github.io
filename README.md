@@ -4,7 +4,8 @@
 [x] Validações de formulário  
 [x] Envio de formulário  
 [x] Animação de confirmação de envio do formulário  
-[ ] Correção problema btn hb-menu  
-[ ] Substituição dos ícones  
-[ ] Verificar responsividade  
+[x] Correção problema btn hb-menu  
+[x] Substituição dos ícones  
+[x] Verificar responsividade  
+[ ] Alterar informações de contato  
 [ ] Limpeza do código
