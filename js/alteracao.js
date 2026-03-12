@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     // LINK (WhatsApp 2)
     document.querySelectorAll("[data-config-href-wpp]").forEach(el => {
 
-        const caminho = el.dataset.configHref.split(".");
+        const caminho = el.dataset.configHrefWpp.split(".");
         let valor = config;
 
         caminho.forEach(chave => valor = valor[chave]);
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     // LINK (Telefone)
     document.querySelectorAll("[data-config-href-telefone]").forEach(el => {
 
-        const caminho = el.dataset.configHref.split(".");
+        const caminho = el.dataset.configHrefTelefone.split(".");
         let valor = config;
 
         caminho.forEach(chave => valor = valor[chave]);
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     // LINK (Email)
     document.querySelectorAll("[data-config-href-email]").forEach(el => {
 
-        const caminho = el.dataset.configHref.split(".");
+        const caminho = el.dataset.configHrefEmail.split(".");
         let valor = config;
 
         caminho.forEach(chave => valor = valor[chave]);
@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     // LINK (Instagram)
     document.querySelectorAll("[data-config-href-instagram]").forEach(el => {
 
-        const caminho = el.dataset.configHref.split(".");
+        const caminho = el.dataset.configHrefInstagram.split(".");
         let valor = config;
 
         caminho.forEach(chave => valor = valor[chave]);

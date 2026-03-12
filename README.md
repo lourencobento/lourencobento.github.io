@@ -8,4 +8,6 @@
 [x] Substituição dos ícones  
 [x] Verificar responsividade  
 [x] Alterar informações de contato  
-[ ] Limpeza do código
+[x] Projeto finalizado  
+  
+[ ] Limpeza do código  
