@@ -1314,7 +1314,7 @@
                       <div class="space-y-5">
                         <!-- CONTATO WPP -->
                         <a
-                          href="https://wa.me/5561984461020"
+                          data-config-href="contato.whatsapp"
                           target="_blank"
                           rel="noopener noreferrer"
                           class="flex items-center gap-4 group"
@@ -1345,7 +1345,7 @@
                         </a>
                         <!-- CONTATO TELEFONE -->
                         <a
-                          href="tel:+5561984461020"
+                          data-config-href-telefone="contato.telefone" 
                           class="flex items-center gap-4 group"
                         >
                           <div
@@ -1376,7 +1376,7 @@
                         </a>
                         <!-- CONTATO E-MAIL -->
                         <a
-                          href="mailto:Lourenzo.aramis@gmail.com"
+                          data-config-href-email="contato.email"   
                           class="flex items-center gap-4 group"
                         >
                           <div
@@ -1413,8 +1413,8 @@
                           </div>
                         </a>
                         <!-- CONTATO INSTAGRAM -->
-                        <a
-                          href="https://instagram.com/Lourencio.bentos"
+                        <a 
+                          data-config-href-instagram="contato.instagram"
                           target="_blank"
                           rel="noopener noreferrer"
                           class="flex items-center gap-4 group"
@@ -1464,7 +1464,7 @@
                     </div>
                     <!-- CONTATO WPP 2 -->
                     <a
-                      href="https://wa.me/5561984461020?text=Olá! Gostaria de saber mais sobre a consultoria de imagem."
+                      data-config-href-wpp="contato.whatsapp"
                       target="_blank"
                       rel="noopener noreferrer"
                       class="block"
@@ -1542,8 +1542,7 @@
                             class="text-sm font-medium text-[#2D2D2D] mb-2 block"
                           >
                             Telefone
-                          </label>
-                          <!-- oninput="this.value = this.value.replace(/[^0-9]/g, '')" -->
+                          </label> 
                           <input
                             type="text"
                             id="telefone"
@@ -1697,7 +1696,7 @@
                     <div class="space-y-4">
                       <a
                         href="tel:+5561984461020"
-                        class="flex items-center gap-3 text-gray-400 hover:text-white text-sm transition-colors"
+                        class="flex items-center gap-3 text-gray-400 hover:text-white text-sm transition-colors" data-config="contato.telefone"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -1715,11 +1714,12 @@
                             d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
                           ></path>
                         </svg>
-                        (61) 98446-1020
+                        <!-- (61) 98446-1020 -->
                       </a>
                       <a
                         href="mailto:Lourenzo.aramis@gmail.com"
                         class="flex items-center gap-3 text-gray-400 hover:text-white text-sm transition-colors"
+                        data-config="contato.email"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -1744,13 +1744,14 @@
                             d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"
                           ></path>
                         </svg>
-                        Lourenzo.aramis@gmail.com
+                        <!-- Lourenzo.aramis@gmail.com -->
                       </a>
                       <a
                         href="https://instagram.com/Lourencio.bentos"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="flex items-center gap-3 text-gray-400 hover:text-white text-sm transition-colors"
+                        data-config="contato.instagram"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -1777,7 +1778,7 @@
                           ></path>
                           <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
                         </svg>
-                        @Lourencio.bentos
+                        <!-- @Lourencio.bentos -->
                       </a>
                     </div>
                   </div>

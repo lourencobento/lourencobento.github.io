@@ -7,5 +7,5 @@
 [x] Correção problema btn hb-menu  
 [x] Substituição dos ícones  
 [x] Verificar responsividade  
-[ ] Alterar informações de contato  
+[x] Alterar informações de contato  
 [ ] Limpeza do código
