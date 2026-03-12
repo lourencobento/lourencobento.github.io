@@ -1994,6 +1994,30 @@ body {
     object-position: top
 }
 
+.setSuccess {
+    background-color: rgb(34 197 94 / var(--tw-bg-opacity, 1));
+    --tw-text-opacity: 1; 
+    color: rgb(4, 63, 26);
+}
+
+.setSuccess:hover {
+    background-color: rgb(34 197 94 / var(--tw-bg-opacity, 1));
+    --tw-text-opacity: 1; 
+    color: rgb(4, 63, 26);
+}
+
+.setFail {
+    background-color: #e43b6081;
+    --tw-text-opacity: 1; 
+    color: rgb(143, 7, 7);
+}
+
+.setFail:hover {
+    background-color: #e43b6081;
+    --tw-text-opacity: 1; 
+    color: rgb(143, 7, 7);
+}
+
 .p-0 {
     padding: 0
 }
