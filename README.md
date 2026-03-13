@@ -1,5 +1,3 @@
 # lourenco.github.io
 
-[x] Projeto finalizado  
-[x] Correção de problema  
-[ ] Limpeza do código  
+Trata-se do meu site pessoal que meus clientes podem usar para entrar em contato comingo 
