@@ -1,6 +1,10 @@
-*,
-:before,
-:after {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+* {
+    font-family: "Inter", sans-serif;
+}
+
+*,:before,:after {
     --tw-border-spacing-x: 0;
     --tw-border-spacing-y: 0;
     --tw-translate-x: 0;
@@ -144,15 +148,12 @@
 }
 
 @keyframes active-transition {
-    from {
-        opacity: 0;
-        transform: scale(0.95);
-    }
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+} 
 
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
+html {
+    scroll-behavior: smooth;
 }
 
 html,
